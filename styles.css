@@ -1,115 +1,162 @@
 /* Réinitialisation des styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  /* Navigation */
-  nav {
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #333; /* Couleur du texte plus sombre pour une meilleure lisibilité */
+  background-color: #f8f9fa; /* Couleur de fond légèrement modifiée pour un contraste optimal */
+}
+
+/* Ajoutez cette règle CSS pour supprimer l'espacement au-dessus de la barre de navigation */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* Retirez cette règle CSS pour éviter les problèmes de positionnement */
+  /* position: fixed; */
+  width: 100%;
+  z-index: 100;
+}
+
+
+/* Navigation */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin-top: 60px; /* Ajout d'une marge pour compenser la navigation fixe */
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.grid-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.grid-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Formulaire de contact */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Animations */
+.animated-title, .animated-subtitle {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.animated-title.visible, .animated-subtitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Media queries pour la responsivité */
+@media screen and (max-width: 768px) {
   nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li a {
-    color: #fff;
     display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #444;
-  }
-  
-  /* Sections */
-  section {
-    padding: 2rem;
-  }
-  
-  h1, h2, h3 {
-    margin-bottom: 1rem;
-  }
-  
-  /* Grid */
-  .grid-container {
-    display: grid;
-    grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-  }
-  
-  .grid-item {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
     text-align: center;
   }
-  
-  .grid-item img {
-    width: 100%;
-    height: auto;
+
+  nav ul li {
+    display: inline;
   }
-  
-  /* Formulaire de contact */
-  form {
-    display: grid;
-    gap: 1rem;
-  }
-  
-  form label {
-    font-weight: bold;
-  }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-  }
-  
-  form button {
-    background-color: #333;
-    color: #fff;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #444;
-  }
-  
-  /* Pied de page */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* Media queries pour la responsivité */
-  @media screen and (max-width: 768px) {
-    nav ul {
-      display: block;
-      text-align: center;
-    }
-  
-    nav ul li {
-      display: inline;
-    }
-  }
-  
-  
+}

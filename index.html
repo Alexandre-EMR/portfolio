@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Ajout de la police Google pour une meilleure lisibilité -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,13 +22,24 @@
   </header>
 
   <section id="home">
-    <h1>Bonjour, je m'appelle [Votre Nom]</h1>
-    <p>Je suis [Votre métier]</p>
+    <h1 class="animated-title">Bonjour, je m'appelle [Votre Nom]</h1>
+    <p class="animated-subtitle">Ingénieur en Big Data</p> <!-- Modification du métier -->
   </section>
 
   <section id="about">
     <h2>À propos de moi</h2>
-    <p>[Votre biographie]</p>
+    <p>Maxime Dupont, un jeune ingénieur en Big Data, a toujours été passionné par la technologie et l'analyse des données. Après avoir obtenu son diplôme en informatique avec une spécialisation en Big Data à l'Université de Paris, Maxime a commencé sa carrière en tant qu'analyste de données chez Data Solutions Inc. où il a rapidement gravi les échelons pour devenir un expert en traitement et analyse de données à grande échelle.
+
+      Au cours de ses premières années chez Data Solutions Inc., Maxime a travaillé sur divers projets de Big Data pour des clients dans des secteurs tels que la finance, les médias et les télécommunications. Il a développé une expertise en utilisant des technologies et des outils tels que Hadoop, Spark, Kafka, et NoSQL pour extraire des informations précieuses à partir de vastes ensembles de données. Maxime est également compétent dans des langages de programmation tels que Python, Java et Scala, ce qui lui permet de créer des solutions personnalisées pour répondre aux besoins de ses clients.
+      
+      En tant que jeune professionnel, Maxime a rapidement compris l'importance de l'apprentissage continu et de l'adaptation aux nouvelles technologies émergentes. Il a donc investi du temps et des efforts dans l'apprentissage de l'intelligence artificielle et du Machine Learning, compétences qui sont aujourd'hui devenues un atout précieux dans son travail quotidien. Maxime a également participé à des conférences et des ateliers liés au Big Data pour développer son réseau professionnel et rester à jour sur les tendances et les innovations de l'industrie.</p>
+    <!-- Ajout de la section Compétences -->
+    <h3>Compétences</h3>
+    <ul>
+      <li>Compétence 1</li>
+      <li>Compétence 2</li>
+      <li>Compétence 3</li>
+    </ul>
   </section>
 
   <section id="portfolio">
@@ -59,5 +73,6 @@
   <footer>
     <p>&copy; [Année] - [Votre Nom]. Tous droits réservés.</p>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
