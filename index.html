@@ -6,8 +6,10 @@
   <title>Mon Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Ajout de la police Google pour une meilleure lisibilité -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Ajouter cette ligne dans la balise <head> pour utiliser la police "Roboto" de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1T2x1spSLi60WU3G6zgHA6Qz2QpW/7yyKmJf7Z" crossorigin="anonymous">
+
 </head>
 <body>
   <header>
@@ -37,10 +39,26 @@
     <h3>Compétences</h3>
     <ul>
       <li>Compétence 1</li>
+      <p> Analyse statistique: Interpréter les données, identifier les tendances et effectuer des prédictions à l'aide de méthodes statistiques.</p>
       <li>Compétence 2</li>
+      <p>Programmation: Maîtriser Python, R ou d'autres langages pour manipuler et analyser les données.</p> 
+      <li>Compétence 3</li>
+      <p> Machine Learning: Créer, entraîner et évaluer des modèles prédictifs à partir de données pour résoudre des problèmes complexes.</p>
       <li>Compétence 3</li>
     </ul>
   </section>
+
+<!-- Ajouter cette section juste avant la section "portfolio" -->
+<section id="skills">
+  <h2>Compétences</h2>
+  <ul>
+    <li>Big Data</li>
+    <li>Python</li>
+    <li>Apache Spark</li>
+    <!-- Ajouter d'autres compétences si nécessaire -->
+  </ul>
+</section>
+
 
   <section id="portfolio">
     <h2>Mon Portfolio</h2>
@@ -70,8 +88,26 @@
     </form>
   </section>
 
+<!-- Ajouter cette section juste avant la balise </footer> -->
+<section class="social-media">
+<a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon" aria-label="LinkedIn"></a>
+  <i class="fab fa-linkedin fa-2x"></i>
+</a>
+<a href="https://github.com/yourusername" target="_blank" class="social-icon" aria-label="LinkedIn"></a>
+  <i class="fab fa-github fa-2x"></i>
+</a>
+<a href="https://twitter.com/yourusername" target="_blank" class="social-icon" aria-label="LinkedIn"></a>
+  <i class="fab fa-twitter fa-2x"></i>
+</a>
+
+  <!-- Ajoutez d'autres icônes de médias sociaux si nécessaire -->
+</section>
+
   <footer>
-    <p>&copy; [Année] - [Votre Nom]. Tous droits réservés.</p>
+      <p>&copy; 2023 EYMAR Alexandre. Tous droits réservés.</p>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-twitter"></i>
   </footer>
   <script src="scripts.js"></script>
 </body>

@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
     const animateElements = function() {
       const windowHeight = $(window).height();

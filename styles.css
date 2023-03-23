@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -12,6 +19,24 @@ body {
   color: #333; /* Couleur du texte plus sombre pour une meilleure lisibilité */
   background-color: #f8f9fa; /* Couleur de fond légèrement modifiée pour un contraste optimal */
 }
+
+/* Ajouter cette règle CSS pour styliser la section "Compétences" */
+#skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+}
+
+#skills li {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
 
 /* Ajoutez cette règle CSS pour supprimer l'espacement au-dessus de la barre de navigation */
 header {
@@ -22,17 +47,6 @@ header {
   z-index: 100;
 }
 
-/* Navigation */
-nav {
-  background-color: #333;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  /* Retirez cette règle CSS pour éviter les problèmes de positionnement */
-  /* position: fixed; */
-  width: 100%;
-  z-index: 100;
-}
 
 
 /* Navigation */
@@ -159,4 +173,26 @@ footer {
   nav ul li {
     display: inline;
   }
+}
+
+/* Ajouter cette règle CSS pour les transitions */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Ajouter cette règle CSS pour les animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Appliquer l'animation aux sections */
+section {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 0.5s;
 }
